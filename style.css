@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,700&display=swap');
+:root{
+    /* primary colors */
+    --moderate-blue:hsl(238, 40%, 52%);
+    --Soft-red: hsl(358, 79%, 66%);
+    --light-grayish-blue: hsl(239, 57%, 85%);
+    --Pale-red: hsl(357, 100%, 86%);
+    /* neutral colors */
+    --dark-blue: hsl(212, 24%, 26%);
+    --grayish-blue: hsl(211, 10%, 45%);
+    --light-gray: hsl(223, 19%, 93%);
+    --very-light-gray: hsl(228, 33%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'rubik';
+}
+.app__comment{
+    background: var(--light-gray);
+    max-width: 1440px;
+}
+.app__comment-container{
+    width: 50%;
+    margin: 30px auto;
+}
+.comment__container{
+    background: var(--white);
+    border-radius: 10px;
+    padding: 15px 20px;
+
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    font-size: 16px;
+}
+.comment__upvote{
+    background: var(--light-gray);
+    padding: 5px 6px;
+    border-radius: 8px;
+
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.comment__upvote-count,
+.comment__upvote-plus,
+.comment__upvote-minus{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--light-grayish-blue);
+    cursor: pointer;
+}
+.comment__upvote-count{
+    color: var(--moderate-blue);
+}
+
+.comment__container-body_op{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+.comment__container-body-op_profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.pp__img{
+    width: 30px;
+}
+.comment__name,
+.comment__time{
+    font-size: 14px;
+}
+.comment__name{
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+.comment__time{
+    font-weight: light;
+    margin-left: 10px;
+    color: var(--grayish-blue);
+}
+.comment__container-body-op_replyBtn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.comment__container-body-op_replyBtn p{
+    color: var(--moderate-blue);
+    font-weight: 500;
+    font-size: 16px;
+}
+.comment__container-body_data p{
+    line-height: 1.5;
+    font-size: 16px;
+    color: var(--grayish-blue);
+}
